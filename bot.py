@@ -12,7 +12,7 @@ from telegram.ext import (
 # ---------------------------------------------------------
 # BOT CONFIGURATION
 # ---------------------------------------------------------
-BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"  # BotFather থেকে পাওয়া টোকেনটি এখানে বসাবেন
+BOT_TOKEN = "8853824377:AAFcNT15C1Dnu1nGRRP43aCYVS_gAu6ILiY"
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
