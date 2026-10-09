@@ -1,3 +1,20 @@
+import os
+from threading import Thread
+from flask import Flask
+
+web_app = Flask('')
+
+@web_app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    port = int(os.environ.get('PORT', 8080))
+    web_app.run(host='0.0.0.0', port=port)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
 import logging
 import requests
 import html
@@ -270,6 +287,7 @@ def main():
     app.add_handler(CommandHandler("check", check_command))
     app.add_handler(CallbackQueryHandler(button_callback))
 
+    keep_alive()
     print("Bot is running...")
     app.run_polling()
 
