@@ -96,7 +96,7 @@ async def check_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     status_msg = await update.message.reply_text("🔎 <b>Fetching Player Details... Please wait...</b>", parse_mode="HTML")
 
-    api_url = f"https://free-fire-api-five.vercel.app/api/v1/info?uid={uid}&region=ind"
+    api_url = f'https://ff-jqe91ktrs-debabrataporia842-crypto.vercel.app/api/info?uid={uid}&region=ind'
 
     try:
         response = requests.get(api_url, timeout=12)
