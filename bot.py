@@ -42,9 +42,10 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🆔 <b>To check a UID:</b>\n"
         "Use:\n"
         "<code>/check 123456789</code>\n\n"
+        "
         "ℹ️ This bot provides publicly available profile information. 🤗\n"
-        "_________😎_____________\n"
-        "<b>This bot is created by AYAN</b>\n"
+        "________________😎________________\n"
+        "<b>This bot is created by AYAN ! </b>\n"
         "----------------------------------"
     )
     keyboard = [
@@ -67,7 +68,8 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🔍 <b>Check Profile:</b> Send <code>/check &lt;UID&gt;</code>\n"
         "📊 <b>UID Information:</b> Instant FF MAX Account Details\n"
         "ℹ️ <b>Help:</b> Type /help for assistance\n"
-        "__________😎___________\n"
+        "                   \n"
+        "________________😎________________\n"
         "<b>This bot is created by AYAN</b>\n"
         "----------------------------------"
     )
